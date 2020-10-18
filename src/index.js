@@ -1,25 +1,24 @@
 /**
- * アロー関数
+ * 分割代入 オブジェクト
+ *
  */
-
-// 従来の記法
-function func1(str) {
-  return str;
-}
-
-console.log(func1("従来の記法"));
-
-// アロー関数 - ベーシック
-// const func2 = (str) => {
-//   return str;
+// const myProfile = {
+//   name: "mario",
+//   age: 45
 // };
 
-// アロー関数 - 単一のreturn
-const func2 = (str) => str;
+// const message = `my name is ${myProfile.name}, age is ${myProfile.age}`;
+// console.log(message);
 
-console.log(func2("arrow function"));
+// const { name, age } = myProfile;
+// const message2 = `my name is ${name}, age is ${age}`;
+// console.log(message2);
 
-// アロー関数使用例
-const func3 = (num1, num2) => num1 + num2;
+/**
+ * 分割代入 配列
+ */
 
-console.log(func3(10, 20));
+const myProfile = ["mario", 45];
+const [name, age] = myProfile;
+const message3 = `my name is ${name}, age is ${age}`;
+console.log(message3);
